@@ -171,7 +171,7 @@ export default function AdminDashboardPage() {
                   contentStyle={{ backgroundColor: 'rgba(15, 23, 42, 0.9)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}
                   itemStyle={{ color: '#06b6d4' }}
                   labelStyle={{ color: '#94a3b8', marginBottom: '4px' }}
-                  formatter={(value: number) => [`${value} ms`, 'Waktu Reaksi']}
+                  formatter={(value: any) => [`${value} ms`, 'Waktu Reaksi']}
                   labelFormatter={(label, payload) => payload?.[0]?.payload?.name ? `${payload[0].payload.name} (${label})` : label}
                 />
                 <Area 
